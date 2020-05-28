@@ -37,16 +37,19 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and suit, create their card
-        Scanner in = new Scanner(System.in);
+//         Scanner in = new Scanner(System.in);
         
-        Card userCard = new Card();
+//         Card userCard = new Card();
         
-        System.out.println("Enter your guess value(1-13) and suit( Hearts, Diamonds, Clubs, Spades):");
-        int guessValue = in.nextInt();
-        userCard.setValue(guessValue);
-        String guessSuit = in.next();
-        userCard.setSuit(guessSuit);
-        boolean report = false;
+//         System.out.println("Enter your guess value(1-13) and suit( Hearts, Diamonds, Clubs, Spades):");
+//         int guessValue = in.nextInt();
+//         userCard.setValue(guessValue);
+//         String guessSuit = in.next();
+//         userCard.setSuit(guessSuit);
+//         boolean report = false;
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit("Spades");
         
         // and search magicHand here
         for (int i=0; i<magicHand.length; i++){
@@ -58,10 +61,6 @@ public class CardTrick {
         
         //Then report the result here
         System.out.println("The user won: " + report);
-        
-        Card luckyCard = new Card();
-        luckyCard.setValue(7);
-        luckyCard.setSuit("Spades");
         
     }
     
