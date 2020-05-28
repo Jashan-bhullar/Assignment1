@@ -59,6 +59,10 @@ public class CardTrick {
         //Then report the result here
         System.out.println("The user won: " + report);
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit("Spades");
+        
     }
     
 }
