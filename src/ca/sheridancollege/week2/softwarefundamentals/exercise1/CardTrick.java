@@ -46,14 +46,14 @@ public class CardTrick {
 //         userCard.setValue(guessValue);
 //         String guessSuit = in.next();
 //         userCard.setSuit(guessSuit);
-//         boolean report = false;
+         boolean report = false;
         Card luckyCard = new Card();
         luckyCard.setValue(7);
         luckyCard.setSuit("Spades");
         
         // and search magicHand here
         for (int i=0; i<magicHand.length; i++){
-            if(userCard.getValue() == magicHand[i].getValue() && userCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())){
+            if(luckyCard.getValue() == magicHand[i].getValue() && luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())){
                 report = true;
                 break;
             }
