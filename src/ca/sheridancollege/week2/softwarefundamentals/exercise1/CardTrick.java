@@ -37,17 +37,18 @@ public class CardTrick {
         }
 
         //insert code to ask the user for Card value and suit, create their card
-        System.out.println("Enter the card Number from 1-13");
-        int card= input.nextInt();
-
-        System.out.println("\nEnter the number against suit you want to select: \n1.Hearts \n2.Diamonds \n3.Spades \n4.Clubs\n");
-        int suit = input.nextInt();
+         
+         Card luckyCard = new Card();
+         luckyCard.setValue(12);
+         luckyCard.setSuit("Hearts");
+         System.out.println("Your card is " +luckyCard.getValue()+ " of " +luckyCard.getSuit());
+      
 
         // and search magicHand here
         boolean result =false;
         for( int i=0; i<magicHand.length;i++){
 
-            if(card == magicHand[i].getValue() && Card.SUITS[suit-1].equals(magicHand[i].getSuit())){
+            if( luckyCard.getValue() == magicHand[i].getValue() &&  luckyCard.getSuit().equals(magicHand[i].getSuit())){
                 result=true;
                 break;
             }
@@ -61,7 +62,7 @@ public class CardTrick {
          System.out.println("\nHurraah !!  you won Card matched ");
         }
         else{
-            System.out.println("\nuhhh ohhh YOu Lose!!! Card didnt matched");
+            System.out.println("\nuhhh ohhh You Lose!!! Card didnt matched");
         }
         
         
