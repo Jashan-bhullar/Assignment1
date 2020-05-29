@@ -11,13 +11,13 @@ package ca.sheridancollege.week2.softwarefundamentals.exercise1;
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Manveet  ID- 991590866
  */
-import java.util.Scanner;
+
 public class CardTrick {
     
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
-        Scanner sc=new Scanner(System.in);
+        
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
@@ -26,17 +26,15 @@ public class CardTrick {
             magicHand[i]=c;
         
         }
-        
-        
-        System.out.println("enter the suit");//insert code to ask the user for Card value and suit, create their card
-        String suit= sc.nextLine();
-        System.out.println("enter the value");
-        int value=sc.nextInt();
+        Card luckyCard = new Card();
+        luckyCard.setValue(6);
+        luckyCard.setSuit("Diamonds");
+      
         
         String result="";
         for(int i=0;i<magicHand.length;i++)
         {
-           if((magicHand[i].getValue()==value)&&(magicHand[i].getSuit().equals(suit)))
+           if((luckyCard.getValue()==magicHand[i].getValue)&&(luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit)))
                    {
                        result=" you won"; 
                    }
