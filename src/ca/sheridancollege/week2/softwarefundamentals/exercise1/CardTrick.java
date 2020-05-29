@@ -62,7 +62,7 @@ public class CardTrick {
          System.out.println("\nHurraah !!  you won Card matched ");
         }
         else{
-            System.out.println("\nuhhh ohhh You Lose!!! Card didnt matched");
+            System.out.println("\nUhhh ohhh You Lose!!! Card didnt matched");
         }
         
         
