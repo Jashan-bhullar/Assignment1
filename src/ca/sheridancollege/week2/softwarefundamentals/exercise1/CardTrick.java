@@ -37,11 +37,15 @@ public class CardTrick {
         
         
         //insert code to ask the user for Card value and suit, create their card
+        Card luckyCard = new Card();
+        luckyCard.setValue(10);
+        luckyCard.setSuit("Diamonds");
         System.out.println("Guess any number from the deck of 52 cards."
                 + "\nEnter card Suit here:");
         userChoiceOfSuit=input.next();
         System.out.println("Enter number of card.");
         userChoiceOfNumber=input.nextInt();
+        
         
         // and search magicHand here
         boolean isWon=false;
