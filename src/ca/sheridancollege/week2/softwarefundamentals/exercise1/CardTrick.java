@@ -29,7 +29,8 @@ public class CardTrick {
             
             magicHand[i] = c;
         }
-        
+       
+        /*
         Scanner input = new Scanner(System.in);
         
         //insert code to ask the user for Card value and suit, create their card
@@ -65,7 +66,39 @@ public class CardTrick {
         {
             System.out.println("\nno! Your card is not in Magic cards");
         }
+        */
+        
+        Card luckyCard = new Card();
+        
+        luckyCard.setValue(4);
+        
+        luckyCard.setSuit(Spades);
+        
+        int luck = 0;
+        
+        //search magic hand
+        for(int i = 0; i < magicHand.length; i++)
+        {
+            if((luckyCard.getValue() == magicHand[i].getValue()) && 
+                    (luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())))
+            {
+                luck = 1;
+            }
+            else
+            {
+                luck = 0;
+            }
+        }
+        
         //Then report the result here
+        if(luck == 1)
+        {
+            System.out.println("You Win!! Lucky Card is in Magic Hands");
+        }
+        if(luck == 0)
+        {
+            System.out.println("You Loose... Lucky Card is NOT in Magic Hands");
+        }
     }
     
 }
