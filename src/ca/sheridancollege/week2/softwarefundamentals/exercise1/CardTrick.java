@@ -44,8 +44,8 @@ public class CardTrick {
         */
         
         Card luckyCard = new Card();
-        luckyCard.setValue(9);
-        luckyCard.setSuit("Diamonds");
+        /*luckyCard.setValue(9);
+        luckyCard.setSuit("Diamonds");*/
         int flag = 0;
         
         for(int i=0;i<7;i++)
