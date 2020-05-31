@@ -30,6 +30,7 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
+        /*
         //insert code to ask the user for Card value and suit, create their card
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of card between 1 and 13 ? ");
@@ -40,7 +41,11 @@ public class CardTrick {
         Card c = new Card();
         c.setValue(userCardNum);
         c.setSuit(userCardSuits);
+        */
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(9);
+        luckyCard.setSuit("Diamonds");
         int flag = 0;
         
         for(int i=0;i<7;i++)
@@ -50,7 +55,7 @@ public class CardTrick {
        
         for(int i = 0; i < 7; i++)
         {
-            if(c.getSuit().equalsIgnoreCase(magicHand[i].getSuit()) && c.getValue() == magicHand[i].getValue())
+            if(luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()) && luckyCard.getValue() == magicHand[i].getValue())
             {
                 System.out.println("Congratulations, User's card is in the magic hand!!");
                 flag = 1;
