@@ -72,7 +72,7 @@ public class CardTrick {
         
         luckyCard.setValue(4);
         
-        luckyCard.setSuit(Spades);
+        luckyCard.setSuit("Spades");
         
         int luck = 0;
         
