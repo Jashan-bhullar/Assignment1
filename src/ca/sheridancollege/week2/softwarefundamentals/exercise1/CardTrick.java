@@ -29,7 +29,27 @@ public class CardTrick {
              
              System.out.println("Value="+magicHand[i].getValue()+" and suit="+magicHand[i].getSuit());
         }
+         Card luckyCard=new Card();
+        luckyCard.setValue(6);
+        luckyCard.setSuit("Diamonds");
      
+        String result=" ";
+        for(int i=0;i<magicHand.length;i++)
+        {
+        // and search magicHand here
+            if(luckyCard.getValue()==magicHand[i].getValue()&&luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
+            {
+                result="You have got a magic hand.";
+            
+            }
+            else
+            {
+                result="You didn't get the magic hand.";
+            }
+        }
+          //Then report the result here
+        System.out.println(result);
+     /*
         //insert code to ask the user for Card value and suit, create their card
         Scanner sc=new Scanner(System.in); 
         System.out.println("Enter the card value and suit");
@@ -61,7 +81,7 @@ public class CardTrick {
         System.out.println(result);  
             
         
-        
+        */
         
     }
     
