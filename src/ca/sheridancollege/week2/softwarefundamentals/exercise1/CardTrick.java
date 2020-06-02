@@ -29,7 +29,20 @@ public class CardTrick {
         System.out.println(magicHand[i].getSuit());
             
         }
-        String input = JOptionPane.showInputDialog("Enter the Card Value"); //code to ask the user for Card value and suit, create their card
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(3); // hardcoding the value and the suit of the luckycard 
+        luckyCard.setSuit("Hearts");
+        
+        for(int i=0; i<magicHand.length; i++){//searching magicHand
+        if((luckyCard.getValue()== magicHand[i].getValue())&&(luckyCard.getSuit().equals(magicHand[i].getSuit()))){  
+        System.out.println("You Win!");{ //ouput
+        }
+        else{
+        System.out.println("You Lose.");
+        }
+        }
+        /*String input = JOptionPane.showInputDialog("Enter the Card Value"); //code to ask the user for Card value and suit, create their card
         int i1 = Integer.parseInt(input);
         
         String input2 = JOptionPane.showInputDialog("Enter the suit value here");
@@ -39,7 +52,7 @@ public class CardTrick {
             }
             else{
             System.out.println("You Lose");
-            }
+            }*/
         
         
        
