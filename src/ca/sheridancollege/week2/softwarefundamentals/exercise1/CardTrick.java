@@ -34,12 +34,13 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+       
+       
            Card luckyCard = new Card();
         luckyCard.setValue(5);
         luckyCard.setSuit("Heart");
         boolean result = false;
+       // and search magicHand here
         for(int i = 0;i<magicHand.length;i++)
         {
              if(luckyCard.equals(magicHand[i]))
