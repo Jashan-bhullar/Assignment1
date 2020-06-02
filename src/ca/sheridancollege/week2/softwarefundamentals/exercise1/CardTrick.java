@@ -5,7 +5,7 @@
  */
 package ca.sheridancollege.week2.softwarefundamentals.exercise1;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -32,15 +32,15 @@ public class CardTrick {
         
         
         //insert code to ask the user for Card value and suit, create their card
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         
-        Card userCard = new Card();
+        //Card userCard = new Card();
         
-        System.out.println("Enter Card value and suit.");
-        int newvalue = input.nextInt();
-        userCard.setValue(newvalue);
-        String newsuit = input.next();
-        userCard.setSuit(newsuit);
+        //System.out.println("Enter Card value and suit.");
+        //int newvalue = input.nextInt();
+        //userCard.setValue(newvalue);
+        //String newsuit = input.next();
+        //userCard.setSuit(newsuit);
         
         Card luckyCard = new Card();
         luckyCard.setValue(2);
