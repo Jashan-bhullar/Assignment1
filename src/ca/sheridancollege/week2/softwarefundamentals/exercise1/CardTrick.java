@@ -32,6 +32,7 @@ public class CardTrick {
             magicHand[i]=c;
         }
         
+        /*
         //insert code to ask the user for Card value and suit, create their card
         Card user = new Card();
         Scanner input = new Scanner(System.in);
@@ -39,6 +40,12 @@ public class CardTrick {
         user.setValue(input.nextInt());
         System.out.print("Enter Suits value (Hearts, Diamonds, Spades, Clubs )");
         user.setSuit(input.next());
+        */
+        
+        //hard-coded user Card
+        Card luckyCard = new Card();
+        luckyCard.setValue(5);
+        luckykCard.setSuit("Diamonds");
         
         for(int i=0;i<7;i++)
         {
