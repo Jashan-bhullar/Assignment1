@@ -50,7 +50,7 @@ public class CardTrick {
         String report = " ";
         for(int i =0; i<magicHand.length; i++)
         {
-           if((luckyCard.getValue()==magicHand[i].getValue())&&(luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
+           if((luckyCard.getValue()==magicHand[i].getValue()) && (luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())))
               {
                   report = "WIN!!luckycard found";
               }
