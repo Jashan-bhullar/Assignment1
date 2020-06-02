@@ -42,10 +42,26 @@ public class CardTrick {
         String newsuit = input.next();
         userCard.setSuit(newsuit);
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit("Diamond");
         
         // and search magicHand here
+        String report = " ";
+        for(int i =0; i<magicHand.length; i++)
+        {
+           if((luckyCard.getValue()==magicHand[i].getValue())&&(luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
+              {
+                  report = "WIN!!luckycard found";
+              }
+              else
+              {
+                  report = "loss!! different Card";
+              }
+        }
            
         //Then report the result here
+              System.out.println("Report : " + report);
     }
     
 
