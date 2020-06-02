@@ -45,7 +45,7 @@ public class CardTrick {
         //hard-coded user Card
         Card luckyCard = new Card();
         luckyCard.setValue(5);
-        luckykCard.setSuit("Diamonds");
+        luckyCard.setSuit("Diamonds");
         
         for(int i=0;i<7;i++)
         {
@@ -56,7 +56,7 @@ public class CardTrick {
         int i=0,checksum=0;
         while(i<7)
         {
-            if(magicHand[i].getValue() == user.getValue() && user.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
+            if(magicHand[i].getValue() == luckyCard.getValue() && luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
             {
                 checksum = 1;
                 break;
