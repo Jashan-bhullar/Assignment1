@@ -44,7 +44,11 @@ public class CardTrick {
         {
              if(luckyCard.equals(magicHand[i]))
               result = true;
-       
+        //Then report the result here
+        if(result == true)
+            System.out.println("You won the game");
+        else
+            System.out.println("You lost it");
     }
     
     }}
