@@ -10,23 +10,39 @@ package ca.sheridancollege.week2.softwarefundamentals.exercise1;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author dancye
+ * @author Nyas Syal - 991589997
  */
 public class CardTrick {
     
-    public static void main(String[] args)
+    public static void main(String[] args) // main method
     {
         Card[] magicHand = new Card[7];
         
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue((int)(1+Math.random()*13)); //randomly taking values for card value and suit
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
+            
+            magicHand[i]=c;
+         System.out.println(magicHand[i].getValue());
+        System.out.println(magicHand[i].getSuit());
+            
         }
+        String input = JOptionPane.showInputDialog("Enter the Card Value"); //code to ask the user for Card value and suit, create their card
+        int i1 = Integer.parseInt(input);
         
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+        String input2 = JOptionPane.showInputDialog("Enter the suit value here");
+        for(int i=0; i<magicHand.length; i++){  //searching magicHand
+            if(i1==magicHand[i].getValue()&&input2.equals(magicHand[i].getSuit())){ //ouput
+            System.out.println("You Win!");
+            }
+            else{
+            System.out.println("You Lose");
+            }
+        
+        
+       
     }
     
 }
