@@ -37,8 +37,8 @@ public class CardTrick {
         // and search magicHand here
         //Then report the result here
            Card luckyCard = new Card();
-        luckyCard.setValue(7);
-        luckyCard.setSuit("Diamonds");
+        luckyCard.setValue(5);
+        luckyCard.setSuit("Heart");
         boolean result = false;
         for(int i = 0;i<magicHand.length;i++)
         {
