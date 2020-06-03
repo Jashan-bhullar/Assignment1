@@ -9,7 +9,7 @@ package ca.sheridancollege.week2.softwarefundamentals.exercise1;
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
- * @author dancye
+ * @author parneet
  */
 
 public class CardTrick {
@@ -27,7 +27,7 @@ public class CardTrick {
             magicHand[i]=c;//c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
-       card luckycard= new card();
+       Card luckycard= new Card();
         luckycard.setValue(8);
         luckycard.setSuit("Clubs");
         
@@ -36,7 +36,7 @@ public class CardTrick {
         
         for(int i=0;i<magicHand.length-1;i++)
         {
-           if((luckycard.getValue()==magicHand[i].getValue())&&(luckycard.getsuit().equalsIgnoreCase(magicHand[i].getSuit())))
+           if((luckycard.getValue()==magicHand[i].getValue())&&(luckycard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())))
                    {
                         guess="you win";
                    }
