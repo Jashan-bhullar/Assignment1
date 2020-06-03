@@ -2,6 +2,9 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+* Modifier:Gurleen kaur
+* Student Number:991585904
+*username:kaur8521
  */
 package ca.sheridancollege.week2.softwarefundamentals.exercise1;
 
@@ -12,7 +15,8 @@ package ca.sheridancollege.week2.softwarefundamentals.exercise1;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author Gurleen
+ * @author dancye
+ * 
  */
 public class Card {
 

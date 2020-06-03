@@ -29,6 +29,7 @@ public class CardTrick {
         
         
         Card[] magicHand = new Card[7];
+                
         
         for (int i=0; i<magicHand.length; i++)
         {
@@ -47,7 +48,9 @@ public class CardTrick {
         System.out.println(Card.SUITS[suitsVal1]);
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+        magicHand[i]=c;
          }
+        
         // and search magicHand here
         
     } 
