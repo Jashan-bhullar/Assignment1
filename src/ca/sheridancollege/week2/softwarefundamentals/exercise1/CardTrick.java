@@ -37,7 +37,7 @@ public class CardTrick {
          System.out.println("enter the suitname");
          String suitname = input.next();
          
-         
+         // new object created for lucky card
         Card luckyCard = new Card();
         luckyCard.setValue(num);
         luckyCard.setSuit(suitname);
