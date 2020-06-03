@@ -56,15 +56,17 @@ public class CardTrick {
         Card luckyCard =new Card();
         luckyCard.setValue(2);
         luckyCard.setSuit("Diamonds");
-        int cardLuck=0;
+        boolean cardLuck=false;
         //search magicHand card
         for(int i=0 ; i <magicHand.length ; i++){
-        if(luckyCard.getvalue()== magicHand[i].getValue()) &&(luckyCard.getSuit()==magicHand[i].getSuit())
-        {cardLuck=1;}
-            else{  cardLuck=0;}
+        if((luckyCard.getValue()==magicHand[i].getValue()) &&(luckyCard.getSuit().equals(magicHand[i].getSuit())))
+        {
+            cardLuck=true;}
+        else  {  
+                 cardLuck=false;}
             
         }
-        if(cardLuck=0)
+        if(cardLuck=false)
             System.out.println("You have got a LUCKY CARD!!");
         else
             System.out.println("Better luck next tym dear!!");
