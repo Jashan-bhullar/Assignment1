@@ -58,7 +58,7 @@ for(int i=0;i<7;i++){
     {
         System.out.println("sorry,User's card is not in the magic hand!!");
     }
-
+//last commit
 }
     }
 }
