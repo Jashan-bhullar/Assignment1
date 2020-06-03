@@ -51,7 +51,22 @@ public class CardTrick {
         magicHand[i]=c;
          }
         
-        // and search magicHand here
-        
+         //add a (hard-coded) Card Object called luckyCard with a number and suit of your choosing.
+
+        Card luckyCard =new Card();
+        luckyCard.setValue(2);
+        luckyCard.setSuit("Diamonds");
+        int cardLuck=0;
+        //search magicHand card
+        for(int i=0 ; i <magicHand.length ; i++){
+        if(luckyCard.getvalue()== magicHand[i].getValue()) &&(luckyCard.getSuit()==magicHand[i].getSuit())
+        {cardLuck=1;}
+            else{  cardLuck=0;}
+            
+        }
+        if(cardLuck=0)
+            System.out.println("You have got a LUCKY CARD!!");
+        else
+            System.out.println("Better luck next tym dear!!");
     } 
 }
