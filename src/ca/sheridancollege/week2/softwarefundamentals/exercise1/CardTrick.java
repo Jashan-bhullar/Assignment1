@@ -41,15 +41,6 @@ public class CardTrick {
         luckyCard.setSuit("Heart");
         boolean result = false;
        // and search magicHand here
-        for(int i = 0;i<magicHand.length;i++)
-        {
-             if(luckyCard.equals(magicHand[i]))
-              result = true;
-        //Then report the result here
-        if(result == true)
-            System.out.println("You won the game");
-        else
-            System.out.println("You lost it");
-    }
+        
     
     }}
